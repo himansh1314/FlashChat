@@ -1,22 +1,26 @@
 package com.himanshflashchat.flashchatnewfirebase;
 
-public class InstantMessage {
-    private String mAuthor;
-    private String mMessage;
+class InstantMessage {
 
-    public InstantMessage(String author, String message) {
-        mAuthor = author;
-        mMessage = message;
+    private String message;
+    private String author;
+
+    InstantMessage(String message, String author) {
+        this.message = message;
+        this.author = author;
     }
 
     public InstantMessage() {
+
+
+
     }
 
-    public String getAuthor() {
-        return mAuthor;
+    String getMessage() {
+        return message;
     }
 
-    public String getMessage() {
-        return mMessage;
+    String getAuthor() {
+        return author;
     }
 }
